@@ -151,19 +151,19 @@ nav li a {
 /* Love and Enjoy feature styles */
 .feature-main-container {
     display: flex;
-    gap: 10%;
+    gap: 15%;
     margin-left: 10%;
 }
 
 .feature-main {
-    width: 50%;
+    width: 45%;
 }
 
 
 
 .feature-main-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 42px;
     color: #131313;
     margin-top: 80px;
     margin-bottom: 30px;
@@ -195,7 +195,7 @@ nav li a {
 }
 
 .img-container {
-    width: 50%;
+    width: 55%;
     margin-right: 10%;
 }
 
@@ -224,7 +224,7 @@ nav li a {
 
 .button {
     display: flex;
-    margin-top: -12%;
+    margin-top: -20%;
 }
 
 .size {
