@@ -238,6 +238,7 @@ nav li a {
     font-size: 40px;
     color: #131313;
     margin-top: 100px;
+    text-align: left;
 
 
 }
@@ -248,6 +249,7 @@ nav li a {
     color: #727272;
     margin-bottom: 100px;
     margin-top: 20px;
+    padding-right: 10%;
 
 
 }
@@ -391,11 +393,165 @@ nav li a {
 
 /* Breakpoints for Responsive */
 
-/* Extra small devices (phones, 576px and down) */
-@media only screen and (max-width: 576px) {}
+/*  small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
 
-/* Small devices (portrait tablets and large phones, 577px and up) */
-@media only screen and (min-width: 577px) {}
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .nav-title {
+        font-size: 30px;
+
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .banner-description {
+        font-size: 10px;
+    }
+
+    .btn-primary {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .feature-title {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .feature-description {
+        font-size: 12px;
+    }
+
+    .feature-image {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .feature-section-container {
+        flex-direction: column;
+        margin-left: 3%;
+
+
+    }
+
+    .feature-main-container {
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    .feature-main {
+        width: 85%;
+    }
+
+    .feature-main-title {
+        font-size: 30px;
+    }
+
+    .image{
+        margin-top: 20px;
+        width: 75vw;
+        height: 40vh;
+    }
+    .button{
+        margin-top: -70px;
+
+    }
+    .btn{
+        width: 150px;
+        height: 100px;
+        font-size: 20px;
+    }
+    .size{
+        font-size: 10px;
+    }
+    .section-title{
+        text-align: left;
+    }
+    .section-description{
+        font-size: 12px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+       margin-bottom: 5%;
+    }
+    .sponsor-description{
+        font-size: 14px;
+        text-align: left;
+        padding: 5%;
+    }
+
+    .sponsor-img-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsor-img{
+        padding-bottom: 25%;
+    }
+
+    .our-philosophy-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0%;
+        padding: 10%;
+        padding-top: 0;
+
+    }
+    .our-philosophy{
+        width: 100%;
+        padding:0;
+        margin-top: 15%;
+    }
+
+    .footer-container{
+        display: flex;
+        height: 15px;
+        width: 350px;
+        padding-left: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-description{
+        font-size: 10px;
+        text-align: center;
+        padding-left: 40px;
+    }
+
+    .section-philosophy-title{
+        margin-bottom:0;
+        padding: 0;
+    }
+
+
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
