@@ -6,9 +6,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-header {
+.banner {
 
     background: rgba(255, 144, 14, 0.1);
+    background-size: cover;
+    width: 100vw;
 
 }
 
@@ -16,20 +18,24 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 625px;
+    justify-content: space-between;
+
 }
 
 .nav-title {
     font-weight: 700;
     font-size: 45px;
     margin-top: 50px;
+    padding-left: 5%;
+    width: 50%;
 
 
 }
 
 nav ul {
     display: flex;
+    justify-content: end;
+    width: 50%;
     list-style: none;
     padding: 5px;
 
@@ -41,7 +47,7 @@ nav ul li {
     margin-top: 45px;
     font-weight: 500;
     color: #424242;
-    margin-left: 40px;
+    margin-right: 10%;
 
 }
 
@@ -53,18 +59,22 @@ nav li a {
 
 .banner-container {
     text-align: center;
+    margin-top: 30px;
 }
 
 .banner-title {
     font-weight: 700;
     font-size: 60px;
     color: #131313;
+    margin-bottom: 20px;
 
 }
 
 .banner-description {
     font-weight: 400;
     font-size: 16px;
+    margin: auto;
+    width: 50%;
     margin-bottom: 30px;
 }
 
@@ -97,7 +107,7 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: 70px;
 }
 
@@ -105,12 +115,20 @@ nav li a {
 .feature-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 15px;
+    width: 50%;
+}
+
+.feature-image img {
+    width: 300px;
+    height: 300px;
+
 }
 
 .description-container {
     margin-left: 70px;
     margin-right: 150px;
+    width: 50%;
 }
 
 .feature-title {
@@ -131,8 +149,12 @@ nav li a {
 /* Love and Enjoy feature styles */
 .feature-main-container {
     display: flex;
-    gap: 100px;
-    margin-left: 160px;
+    gap: 10%;
+    margin-left: 10%;
+}
+
+.feature-main {
+    width: 50%;
 }
 
 
@@ -141,7 +163,9 @@ nav li a {
     font-weight: 700;
     font-size: 45px;
     color: #131313;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-left: 5px solid #FF900E;
 }
 
 .feature-main-description {
@@ -168,11 +192,14 @@ nav li a {
 
 }
 
+.img-container {
+    width: 50%;
+    margin-right: 10%;
+}
+
 .image {
-    width: 708px;
-    height: 900px;
+    width: 700px;
     margin-top: 100px;
-    margin-right: 150px;
 
 }
 
@@ -195,7 +222,7 @@ nav li a {
 
 .button {
     display: flex;
-    margin-top: -160px;
+    margin-top: -130px;
 }
 
 .size {
@@ -230,11 +257,11 @@ nav li a {
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 125px;
+    gap: 5%;
 }
 
 .fact-details {
-    margin-left: 160px;
+    margin-left: 12%;
 }
 
 .card {
@@ -242,8 +269,15 @@ nav li a {
     border: 1px solid #FF900E;
     width: 130px;
     height: 130px;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+/* style for transform property rotate */
+
+.card:hover {
+    transform: rotate(90deg);
 }
 
 .card-img {
@@ -289,7 +323,7 @@ nav li a {
 
 .sponsor-img-container {
     display: flex;
-    gap: 90px;
+    gap: 7%;
     justify-content: center;
 }
 
@@ -309,13 +343,14 @@ nav li a {
     margin: 150px;
 
 }
-.footer-description{
+
+.footer-description {
     text-align: center;
 }
 
 /* Extra section that is added by me */
 
-.our-philosophy-container{
+.our-philosophy-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -324,7 +359,7 @@ nav li a {
     margin-right: 250px;
 }
 
-.section-philosophy-title{
+.section-philosophy-title {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -333,20 +368,127 @@ nav li a {
 
 }
 
-.our-philosophy{
+.our-philosophy {
     padding: 30px;
-    
+
 }
-.philosophy-title{
+
+.philosophy-title {
     font-size: 20px;
     font-weight: 600;
-    color:#000000;
+    color: #000000;
     margin-bottom: 20px;
 
 }
-.philosophy-description{
+
+.philosophy-description {
     font-size: 16px;
     font-weight: 400;
     color: #727272;
+
+}
+
+
+/* Breakpoints for Responsive */
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {}
+
+/* Small devices (portrait tablets and large phones, 577px and up) */
+@media only screen and (min-width: 577px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .banner {
+        width: 100vw;
+    }
+
+    .banner-title {
+        font-size: 40px;
+
+    }
+
+    .banner-description {
+        font-size: 14px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+
+    .sponsor-section-container {
+        height: 80%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .btn-primary {
+        height: 50px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .image {
+        width: 500px;
+    }
+
+    .button {
+        margin-top: -180px;
+    }
+
+    .btn {
+        width: 20%;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .size {
+        font-size: 14px;
+    }
+
+    .feature-main-title {
+        font-size: 30px;
+    }
+
+    .feature-main-description,
+    .catagory {
+        font-size: 14px;
+    }
+
+    .shadow {
+        padding: 10px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .feature-title {
+        font-size: 30px;
+
+    }
+
+    .feature-description {
+        font-size: 12px;
+    }
+
+    .feature-image img {
+        width: 200px;
+        height: 200px;
+        gap: 2%;
+    }
+
+    .sponsor-img img {
+        width: 80px;
+    }
 
 }
