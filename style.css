@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+
+    background: rgba(255, 144, 14, 0.1);
+
+}
+
+/* Nav section styles */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 625px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 50px;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+
+}
+
+nav ul li {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 45px;
+    font-weight: 500;
+    color: #424242;
+    margin-left: 40px;
+
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Banner part styles */
+
+.banner-container {
+    text-align: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #131313;
+
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #ff0000;
+
+}
+
+.banner-img {
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+
+}
+
+/* Quick list Feature Section Styles */
+
+.feature-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.description-container {
+    margin-left: 70px;
+    margin-right: 150px;
+}
+
+.feature-title {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.feature-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.feature-color {
+    color: #FF900E;
+}
+
+/* Love and Enjoy feature styles */
+.feature-main-container {
+    display: flex;
+    gap: 100px;
+    margin-left: 160px;
+}
+
+
+
+.feature-main-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-top: 100px;
+}
+
+.feature-main-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 40px;
+
+}
+
+.description-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 20px;
+
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 20px;
+
+}
+
+.image {
+    width: 708px;
+    height: 900px;
+    margin-top: 100px;
+    margin-right: 150px;
+
+}
+
+.shadow {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 23px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 300px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    margin-top: -160px;
+}
+
+.size {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+/* Some fact section Styles */
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #131313;
+    margin-top: 100px;
+
+
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 100px;
+    margin-top: 20px;
+
+
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+
+.fact-details {
+    margin-left: 160px;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #FF900E;
+    width: 130px;
+    height: 130px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.card-img {
+    height: 40px;
+    width: 40px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #424242;
+
+}
+
+.catagory {
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+
+}
+
+
+/* Our Sponsor section styles */
+
+.sponsor-section {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.sponsor-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #131313;
+}
+
+.sponsor-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.sponsor-img-container {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+
+.sponsor-img {
+    width: 120px;
+    height: 40px;
+}
+
+/* Footer Section Styles */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 80px;
+    margin: 150px;
+
+}
+.footer-description{
+    text-align: center;
+}
+
+/* Extra section that is added by me */
+
+.our-philosophy-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.section-philosophy-title{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+}
+
+.our-philosophy{
+    padding: 30px;
+    
+}
+.philosophy-title{
+    font-size: 20px;
+    font-weight: 600;
+    color:#000000;
+    margin-bottom: 20px;
+
+}
+.philosophy-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+
+}
